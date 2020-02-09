@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name="sanic_camelcase_middleware",
-    version="0.1.0",
+    version="0.0.1",
     description="Middleware for camelizing request and response bodies for sanic",
     long_description=long_description,
     long_description_content_type="text/markdown",
