@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="sanic_camelcase_middleware",
     version="0.1",
-    description="middleware for camelizing request and response for sanic",
+    description="Middleware for camelizing request and response bodies for sanic",
     url="http://github.com/ahmednafies/sanic_camelcase_middleware",
     author="Ahmed Nafies",
     author_email="ahmed.nafies@gmail.com",
