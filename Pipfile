@@ -12,6 +12,7 @@ pyhumps = "*"
 pytest-sanic = "*"
 coverage = "*"
 coverage-badge = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
