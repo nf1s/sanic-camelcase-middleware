@@ -4,8 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+flake8 = "*"
+sanic = "*"
 
 [packages]
 
 [requires]
-python_version = "2.7"
+python_version = "3.6"
