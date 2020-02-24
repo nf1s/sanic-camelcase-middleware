@@ -14,7 +14,7 @@ jobs:
         - run:
             command: |
               sudo pip install pipenv
-              pipenv install --dev
+              pipenv install --dev --system
         - save_cache:
             key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
             paths:
@@ -22,10 +22,10 @@ jobs:
               - "/usr/local/bin"
               - "/usr/local/lib/python3.7/site-packages"
         - run:
+            name: Run Tests
             command: |
-              pipenv run pytest tests.py
-        - store_test_results:
-            path: test-results
+            pipenv run coverage run -m pytest tests.py
+            pipenv run coverage report
+            pipenv run coverage html
         - store_artifacts:
-            path: test-results
-            destination: tr1
+            path: htmlcov
