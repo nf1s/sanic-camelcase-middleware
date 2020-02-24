@@ -3,7 +3,7 @@ jobs:
     build:
       working_directory: ~/sanic_camelcase_middleware
       docker:
-        - image: circleci/python:3.7.3
+        - image: circleci/python:3.7.5
   
       steps:
         - checkout
