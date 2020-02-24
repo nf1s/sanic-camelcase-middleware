@@ -6,7 +6,7 @@ with open("README.md") as f:
 setup(
     name="sanic_camelcase_middleware",
     version="1.0.0",
-    description="Middleware for camelizing request and response bodies for sanic",
+    description="Middleware for camelizing request and response bodies for Sanic",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="http://github.com/ahmednafies/sanic_camelcase_middleware",
@@ -14,6 +14,6 @@ setup(
     author_email="ahmed.nafies@gmail.com",
     license="MIT",
     packages=["sanic_camelcase_middleware"],
-    install_requires=["pyhumps"],
+    install_requires=["sanic", "pyhumps"],
     zip_safe=False,
 )
