@@ -11,6 +11,7 @@ sanic = "*"
 pyhumps = "*"
 pytest-sanic = "*"
 coverage = "*"
+coverage-badge = "*"
 
 [requires]
 python_version = "3.7"
