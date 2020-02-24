@@ -1,3 +1,14 @@
+# -*- coding: utf-8 -*-
+""" Sanic camelcase middleware module
+
+Middleware is checks if a request has a body,
+if a request has a body,  middleware will decode the body and decamilize (camelCase => snake_case) its keys
+then encode it back again.
+
+example if the request.body = {"myVal":"Hello_world"},
+the middleware will convert it to {"my_val":"Hello_world"}
+
+"""
 from json import loads, dumps
 from humps import camelize, decamelize
 
