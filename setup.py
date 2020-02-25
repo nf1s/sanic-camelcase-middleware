@@ -18,7 +18,6 @@ setup(
     packages=["sanic_camelcase_middleware"],
     install_requires=["sanic", "pyhumps"],
     classifiers=[
-        "Development Status :: 3 - Beta",
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Build Tools",
         "License :: OSI Approved :: MIT License",
