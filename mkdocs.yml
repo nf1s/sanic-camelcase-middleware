@@ -1,4 +1,7 @@
 site_name: Sanic camelcase middleware
+nav:
+  - Home: index.md
+
 theme:
   name: "material"
   palette:
