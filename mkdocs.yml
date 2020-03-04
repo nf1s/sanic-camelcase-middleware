@@ -1,0 +1,3 @@
+site_name: sanic_camelcase_middleware
+theme:
+  name: "material"
