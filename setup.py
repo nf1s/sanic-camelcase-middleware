@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md") as f:
     long_description = f.read()
 
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 setup(
     name="sanic_camelcase_middleware",
@@ -11,7 +11,7 @@ setup(
     description="Middleware for camelizing request and response bodies for Sanic",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="http://github.com/ahmednafies/sanic_camelcase_middleware",
+    url="https://ahmednafies.github.io/sanic_camelcase_middleware/",
     author="Ahmed Nafies",
     author_email="ahmed.nafies@gmail.com",
     license="MIT",
