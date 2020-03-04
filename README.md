@@ -2,6 +2,9 @@
 
 # sanic_camelcase_middlware
 Middleware for camelizing request and response bodies for sanic
+
+Full documentation can be found [here](https://ahmednafies.github.io/sanic_camelcase_middleware/)
+
 ## How to install
     pip install sanic-camelcase-middlware
 
