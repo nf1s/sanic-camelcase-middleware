@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#7e57c2">
+        <meta name="theme-color" content="#e91e63">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="deep-purple" data-md-color-accent="">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -225,13 +225,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#full-example" class="md-nav__link">
-    Full example
-  </a>
-  
-</li>
-      
       
       
       
@@ -240,6 +233,30 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="install/" title="Install" class="md-nav__link">
+      Install
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="example/" title="Full Example" class="md-nav__link">
+      Full Example
+    </a>
   </li>
 
     
@@ -284,13 +301,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#full-example" class="md-nav__link">
-    Full example
-  </a>
-  
-</li>
-      
       
       
       
@@ -326,24 +336,6 @@ from sanic_camelcase_middleware import Camelize
 app = Sanic(__name__)
 Camelize(app)
 </code></pre>
-<h2 id="full-example">Full example</h2>
-<pre><code>from sanic import Sanic
-from sanic.response import json
-from sanic_camelcase_middleware import Camelize
-
-app = Sanic(__name__)
-
-Camelize(app)
-
-
-@app.route("/post", methods=["POST"])
-async def test(request):
-    return json("is_camelcase": True, "message": request.json})
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
-</code></pre>
                 
                   
                 
@@ -361,6 +353,27 @@ if __name__ == "__main__":
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="install/" title="Install" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Install
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
