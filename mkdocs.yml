@@ -1,6 +1,9 @@
 site_name: Sanic camelcase middleware
-
+nav:
+  - Getting Started: index.md
+  - Install: install.md
+  - Full Example: example.md
 theme:
   name: "material"
   palette:
-    primary: "deep purple"
+    primary: "pink"
