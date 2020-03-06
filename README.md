@@ -1,4 +1,5 @@
-[![CircleCI](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware.svg?style=shield)](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware) ![](./coverage.svg)
+[![CircleCI](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware.svg?style=shield)](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware) [![codecov](https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware)
+
 
 # sanic_camelcase_middlware
 Middleware for camelizing request and response bodies for sanic
