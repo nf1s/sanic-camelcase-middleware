@@ -1,3 +1,6 @@
+version: 2.1 # use CircleCI 2.1
+orbs:
+    codecov: codecov/codecov@1.0.5
 jobs:
     build:
         working_directory: ~/sanic_camelcase_middleware
@@ -25,6 +28,9 @@ jobs:
                   command: |
                       pipenv run coverage run -m pytest tests.py
                       pipenv run coverage report
-                      pipenv run coverage html
+                      pipenv run coverage json
             - store_artifacts:
-                  path: htmlcov
+                  path: coverage.json
+            - codecov/upload:
+                  file: coverage.json
+                  flags: backen
