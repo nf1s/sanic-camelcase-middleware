@@ -1,15 +1,17 @@
+# Sanic Camelcase Middleware
+
 [![CircleCI](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware.svg?style=shield)](https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware) [![codecov](https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware)
 
-
-# sanic_camelcase_middlware
 Middleware for camelizing request and response bodies for sanic
 
 Full documentation can be found [here](https://ahmednafies.github.io/sanic_camelcase_middleware/)
 
 ## How to install
+
     pip install sanic-camelcase-middlware
 
 ### Example
+
     from sanic import Sanic
     from sanic_camelcase_middleware import Camelize
 
@@ -17,6 +19,7 @@ Full documentation can be found [here](https://ahmednafies.github.io/sanic_camel
     Camelize(app)
 
 ### Full example
+
     from sanic import Sanic
     from sanic.response import json
     from sanic_camelcase_middleware import Camelize
