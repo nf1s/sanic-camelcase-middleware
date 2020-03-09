@@ -13,6 +13,7 @@ pytest-sanic = "*"
 coverage = "*"
 coverage-badge = "*"
 twine = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.7"
