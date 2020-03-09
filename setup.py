@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md") as f:
     long_description = f.read()
 
-VERSION = "1.1.4"
+VERSION = "1.1.5"
 
 setup(
     name="sanic_camelcase_middleware",
