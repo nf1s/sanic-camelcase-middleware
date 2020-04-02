@@ -6,7 +6,9 @@ Full code on [github](https://github.com/ahmednafies/sanic_camelcase_middleware)
 
 ## Install
 
+```bash
     pip install sanic_camelcase_middelware
+```
 
 ## Dependencies
 
@@ -15,8 +17,10 @@ Full code on [github](https://github.com/ahmednafies/sanic_camelcase_middleware)
 
 ## Example
 
+```python
     from sanic import Sanic
     from sanic_camelcase_middleware import Camelize
 
     app = Sanic(__name__)
     Camelize(app)
+```

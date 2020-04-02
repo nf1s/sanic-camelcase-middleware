@@ -8,18 +8,23 @@ Full documentation can be found [here](https://ahmednafies.github.io/sanic_camel
 
 ## How to install
 
+```bash
     pip install sanic-camelcase-middlware
+```
 
 ### Example
 
+```python
     from sanic import Sanic
     from sanic_camelcase_middleware import Camelize
 
     app = Sanic(__name__)
     Camelize(app)
+```
 
 ### Full example
 
+```python
     from sanic import Sanic
     from sanic.response import json
     from sanic_camelcase_middleware import Camelize
@@ -36,3 +41,4 @@ Full documentation can be found [here](https://ahmednafies.github.io/sanic_camel
 
     if __name__ == "__main__":
         app.run(host="0.0.0.0", port=8000)
+```
