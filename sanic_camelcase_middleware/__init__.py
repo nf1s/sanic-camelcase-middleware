@@ -12,6 +12,11 @@ the middleware will convert it to {"my_val":"Hello_world"}
 from json import loads, dumps
 from humps import camelize, decamelize
 
+__author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
+__copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
+__license__ = "MIT"
+__version__ = "1.2.0"
+
 
 class Camelize:
     def __init__(self, app):
@@ -35,4 +40,3 @@ class Camelize:
             """
             if response.body:
                 response.body = bytes(dumps(camelize(loads(response.body))), "utf-8")
-
