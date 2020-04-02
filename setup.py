@@ -1,13 +1,17 @@
+import io
+import re
+
 from setuptools import setup
 
-with open("README.md") as f:
+with io.open("README.md") as f:
     long_description = f.read()
 
-VERSION = "1.1.5"
+with io.open("covid/__init__.py", "rt", encoding="utf8") as f:
+    version = re.search(r'__version__ = "(.*?)"', f.read()).group(1)
 
 setup(
     name="sanic_camelcase_middleware",
-    version=VERSION,
+    version=version,
     description="Middleware for camelizing request and response bodies for Sanic",
     long_description=long_description,
     long_description_content_type="text/markdown",
