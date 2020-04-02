@@ -319,23 +319,25 @@
                 
                 
                 <h1 id="getting-started">Getting Started</h1>
-<p><a href="https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware"><img alt="CircleCI" src="https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware.svg?style=shield" /></a> <a href="https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware"><img alt="codecov" src="https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware/branch/master/graph/badge.svg" /></a></p>
+<p><a href="https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware"><img alt="CircleCI" src="https://circleci.com/gh/ahmednafies/sanic_camelcase_middleware.svg?style=shield" /></a> <a href="https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware"><img alt="codecov" src="https://codecov.io/gh/ahmednafies/sanic_camelcase_middleware/branch/master/graph/badge.svg" /></a> <a href="https://pepy.tech/project/fastapi-camelcase"><img alt="Downloads" src="https://pepy.tech/badge/fastapi-camelcase" /></a> <img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/ahmednafies/sanic_camelcase_middleware" /> <img alt="GitHub" src="https://img.shields.io/github/license/ahmednafies/sanic_camelcase_middleware" /></p>
 <p>Full code on <a href="https://github.com/ahmednafies/sanic_camelcase_middleware">github</a>.</p>
 <h2 id="install">Install</h2>
-<pre><code>pip install sanic_camelcase_middelware
-</code></pre>
+<div class="codehilite"><pre><span></span><code>    pip install sanic_camelcase_middelware
+</code></pre></div>
+
+
 <h2 id="dependencies">Dependencies</h2>
 <ul>
 <li><a href="https://pypi.org/project/pyhumps/">pyhumps</a></li>
 <li><a href="https://pypi.org/project/sanic/">sanic</a></li>
 </ul>
 <h2 id="example">Example</h2>
-<pre><code>from sanic import Sanic
-from sanic_camelcase_middleware import Camelize
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">sanic</span> <span class="kn">import</span> <span class="n">Sanic</span>
+    <span class="kn">from</span> <span class="nn">sanic_camelcase_middleware</span> <span class="kn">import</span> <span class="n">Camelize</span>
 
-app = Sanic(__name__)
-Camelize(app)
-</code></pre>
+    <span class="n">app</span> <span class="o">=</span> <span class="n">Sanic</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+    <span class="n">Camelize</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</code></pre></div>
                 
                   
                 
