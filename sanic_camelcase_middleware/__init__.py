@@ -15,15 +15,14 @@ from humps import camelize, decamelize
 __author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
 __copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
 __license__ = "MIT"
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 
 
 class Camelize:
     def __init__(self, app):
         @app.middleware("request")
         async def request_to_snake_case(request):
-            """Function converts request body to snake_case
-            
+            """Function converts request body to snake_case        
             Args:
                 request: Sanic HttpRequest Object
             """
@@ -33,7 +32,6 @@ class Camelize:
         @app.middleware("response")
         async def response_to_camel(request, response):
             """Function converts response body to camelcase
-            
             Args:
                 request (HttpRequest): Sanic HttpRequest Object
                 response (HttpRequest): Sanic HttpResponse Object
