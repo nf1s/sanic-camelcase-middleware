@@ -15,7 +15,7 @@ from humps import camelize, decamelize
 __author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
 __copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
 __license__ = "MIT"
-__version__ = "1.2.1"
+__version__ = "1.2.2"
 
 
 class Camelize:
