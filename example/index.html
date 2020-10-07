@@ -210,9 +210,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Full Example
+      </label>
+    
     <a href="./" title="Full Example" class="md-nav__link md-nav__link--active">
       Full Example
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-disable-the-middleware-for-request-payload" class="md-nav__link">
+    To disable the middleware for request payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-disable-the-middleware-for-response-body" class="md-nav__link">
+    To disable the middleware for response body
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -233,6 +269,29 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-disable-the-middleware-for-request-payload" class="md-nav__link">
+    To disable the middleware for request payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-disable-the-middleware-for-response-body" class="md-nav__link">
+    To disable the middleware for response body
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -262,6 +321,28 @@
 
     <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
         <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h3 id="to-disable-the-middleware-for-request-payload">To disable the middleware for request payload</h3>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">sanic</span> <span class="kn">import</span> <span class="n">Sanic</span>
+    <span class="kn">from</span> <span class="nn">sanic_camelcase_middleware</span> <span class="kn">import</span> <span class="n">Camelize</span>
+
+    <span class="n">app</span> <span class="o">=</span> <span class="n">Sanic</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+    <span class="c1"># default `decamelize_request=True`</span>
+    <span class="n">Camelize</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">decamelize_request</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h3 id="to-disable-the-middleware-for-response-body">To disable the middleware for response body</h3>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">sanic</span> <span class="kn">import</span> <span class="n">Sanic</span>
+    <span class="kn">from</span> <span class="nn">sanic_camelcase_middleware</span> <span class="kn">import</span> <span class="n">Camelize</span>
+
+    <span class="n">app</span> <span class="o">=</span> <span class="n">Sanic</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+    <span class="c1"># default `camelize_response=True`</span>
+    <span class="n">Camelize</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">camelize_response</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
                 
                   
