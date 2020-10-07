@@ -8,6 +8,7 @@
 /*.egg-info
 /*.egg
 .vscode
+.vim
 .coverage
 .pytest_cache
 .pypirc
