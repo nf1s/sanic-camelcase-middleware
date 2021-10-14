@@ -3,17 +3,17 @@
 ## pip
 
 ```bash
-    pip install sanic_camelcase_middelware
+    pip install sanic-camelcase-middleware
 ```
 
 ## pipenv
 
 ```bash
-    pipenv install sanic_camelcase_middelware
+    pipenv install sanic-camelcase-middleware
 ```
 
 ## conda
 
 ```bash
-    conda install sanic_camelcase_middelware
+    conda install sanic-camelcase-middleware
 ```
