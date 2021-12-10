@@ -15,10 +15,10 @@ setup(
     description="Middleware for camelizing request and response bodies for Sanic",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://ahmednafies.github.io/sanic_camelcase_middleware/",
+    url="https://nf1s.github.io/sanic-camelcase-middleware/",
     project_urls={
-        "Documentation": "https://ahmednafies.github.io/sanic_camelcase_middleware/",
-        "Source": "https://github.com/ahmednafies/sanic_camelcase_middleware",
+        "Documentation": "https://nf1s.github.io/sanic-camelcase-middleware/",
+        "Source": "https://github.com/nf1s/sanic-camelcase-middleware",
     },
     author="Ahmed Nafies",
     author_email="ahmed.nafies@gmail.com",
