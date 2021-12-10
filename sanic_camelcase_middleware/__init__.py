@@ -10,13 +10,14 @@ example if the request.body = {"myVal":"Hello_world"},
 the middleware will convert it to {"my_val":"Hello_world"}
 
 """
-from json import loads, dumps
+from json import dumps, loads
+
 from humps import camelize, decamelize
 
 __author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
 __copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
 __license__ = "MIT"
-__version__ = "1.3.0"
+__version__ = "1.3.1"
 
 
 class Camelize:
