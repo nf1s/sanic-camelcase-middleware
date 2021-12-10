@@ -12,6 +12,7 @@ pdbpp = "*"
 sanic = "*"
 pyhumps = "*"
 pytest-sanic = "*"
+sanic-testing = '*'
 coverage = "*"
 coverage-badge = "*"
 twine = "*"
