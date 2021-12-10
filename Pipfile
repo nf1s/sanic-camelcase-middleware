@@ -12,6 +12,7 @@ pdbpp = "*"
 sanic = "*"
 pyhumps = "*"
 pytest-sanic = "*"
+sanic-testing = '*'
 coverage = "*"
 coverage-badge = "*"
 twine = "*"
@@ -19,7 +20,7 @@ mypy = "*"
 jeepney = ">=0.4.2"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
 
 [pipenv]
 allow_prereleases = true

@@ -25,7 +25,7 @@ setup(
     license="MIT",
     packages=["sanic_camelcase_middleware"],
     install_requires=["sanic", "pyhumps"],
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     classifiers=[
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Build Tools",
