@@ -53,7 +53,6 @@ Full documentation can be found [here](https://nf1s.github.io/sanic-camelcase-mi
 
     # default `decamelize_request=True`
     Camelize(app, decamelize_request=False)
-
 ```
 
 ### To disable the middleware for response body
@@ -66,5 +65,4 @@ Full documentation can be found [here](https://nf1s.github.io/sanic-camelcase-mi
 
     # default `camelize_response=True`
     Camelize(app, camelize_response=False)
-
 ```
